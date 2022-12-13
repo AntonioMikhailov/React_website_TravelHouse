@@ -1,0 +1,88 @@
+.singletop {
+	padding:80px 0px 80px 0px;
+}
+.singletop-title {
+	margin:0px 0px 40px 0px;
+}
+.title-h1 {
+}
+.singletop-row {
+	display:flex;
+	margin:0 -20px;
+}
+.singletop-left {
+	flex-basis:50%;
+	padding:0 20px;
+}
+.singletop-left img {
+	width:100%;
+}
+.singletop-right {
+	flex-basis:50%;
+	padding:0 20px;
+}
+.singletop-right__row {
+}
+.singletop-right__subhead {
+	margin:-5px 0px 20px 0px;
+}
+.singletop-right-price__row {
+	display:flex;
+	margin:0px 0px 10px 0px;
+}
+.singletop-right-price__left {
+}
+.singletop-right-price__right {
+}
+.singletop-right__text {
+	margin:0px 0px 20px 0px;
+}
+.singletop-right-icon__row {
+}
+.singletop-right-icon__column {
+	display:flex;
+	align-items:flex-end;
+	margin:0px 0px 20px 0px;
+}
+.singletop-right-icon__icon {
+	margin:0px 10px 0px 0px;
+}
+.singletop-right-icon__text {
+}
+@media screen and (max-width:1200px) {
+	.singletop {
+	padding:60px 0px 60px 0px;
+}
+.singletop-title {
+	margin:0px 0px 30px 0px;
+}
+}
+@media screen and (max-width:600px) {
+	.singletop-row {
+	display:flex;
+	flex-direction:column;
+	margin:0 -20px;
+}
+.singletop {
+	padding:40px 0px 60px 0px;
+}
+.singletop-title {
+	margin:0px 0px 20px 0px;
+}
+.singletop-left {
+	flex-basis:100%;
+	padding:0 20px;
+	margin:0px 0px 30px 0px;
+}
+}
+@media screen and (max-width:400px) {
+	.singletop {
+	padding:20px 0px 60px 0px;
+}
+.singletop-title {
+	margin:0px 0px 10px 0px;
+}
+.singletop-right__subhead {
+	margin:0px 0px 10px 0px;
+}
+}

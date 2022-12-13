@@ -1,0 +1,41 @@
+ 
+
+.anchor-wrapper {
+	position:fixed;
+	z-index:5;
+	bottom:20px;
+	right:20px;
+	width:30px;
+	height:30px;
+	background-color:#9797979b;
+  // background-color: $seablue;
+	border-radius:50%;
+	/* padding:8px 3px 3px 3px;
+	*/
+
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	cursor:pointer;
+  opacity:0;
+	visibility:hidden;
+	transition:all 0.5s ease .0s;
+}
+.anchor-button {
+	background:url('../../assets/img/icons/Up-arrow.svg') 0px 0px no-repeat;
+	width:15px;
+	height:15px;
+	background-size:100%;
+}
+.anchor-text {
+	font-size:12px;
+	text-transform:uppercase;
+	font-family:b;
+	letter-spacing:0.05rem;
+	color:#1F283F;
+}
+.anchor-active {
+	opacity:1;
+	visibility:visible;
+}

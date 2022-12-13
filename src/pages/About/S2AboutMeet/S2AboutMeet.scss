@@ -1,0 +1,140 @@
+.meet {
+	padding:100px 0px 60px 0px;
+}
+.meet-row {
+	position:relative;
+	display:flex;
+	align-items:flex-end;
+	align-items:center;
+}
+.meet-row::before {
+	content:'';
+	position:absolute;
+	top:calc(35% + 00px);
+	left:0;
+	width:100%;
+	height:200px;
+	background-color:#DFFDFF;
+	z-index:0;
+}
+ 
+.meet-row__left {
+	flex-basis:70%;
+	padding:0px 0px 0px 20px;
+}
+.meet-left__title {
+	margin:0px 0px 60px 0px;
+}
+ 
+.meet-left-columns-row {
+	display:flex;
+	margin:0 -20px;
+}
+.meet-left__item {
+	position:relative;
+	flex-basis:33.3%;
+	padding:0 20px;
+}
+.meet-left-item__image {
+	max-width:305px;
+}
+.meet-left-item__image img {
+	width:100%;
+}
+.meet-left-background__row {
+	background-color:#535353;
+	height:90px;
+	max-width:305px;
+}
+.meet-left-item__title {
+	font-family:b;
+	color:rgb(255,255,255);
+	font-size:18px;
+	text-transform:uppercase;
+	text-align:center;
+	padding:15px 0px 0px 0px;
+}
+.meet-left-item__subhead {
+	font-family:b;
+	color:rgb(255,255,255);
+	font-size:12px;
+	text-transform:uppercase;
+	text-align:center;
+	padding:5px 0px 0px 0px;
+	letter-spacing:0.07rem;
+}
+.meet-left-item-social__row {
+	margin:10px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+ 
+}
+.meet-left-social__item {
+  font-family: s;
+  font-size: 16px;
+  color: $seablue;
+  color: #DFFDFF;
+  transition: all 0.3s ease .0s;
+  
+}
+.meet-left-social__item:hover {
+ color: $seablue;
+ color: rgb(255, 255, 255);
+  
+}
+.meet-left-social__item img {
+	display:inline;
+	width:12px;
+}
+.meet-row__right {
+	position:relative;
+	flex-basis:40%;
+}
+.meet-row__right img {
+	width:100%;
+	margin:0px 0px -70px -0px;
+}
+@media screen and (max-width:900px) {
+	.meet {
+	padding:80px 0px 60px 0px;
+}
+.meet-row__right {
+	display:none;
+}
+.meet-row__left {
+	flex-basis:100%;
+	padding:0px 20px 0px 20px;
+}
+}
+@media screen and (max-width:600px) {
+	.meet-left__title {
+	font-size:35px;
+	margin:0px 0px 40px 0px;
+}
+.meet {
+	padding:40px 0px 60px 0px;
+}
+.meet-left-columns-row {
+	display:flex;
+	margin:0 -20px;
+	flex-direction:column;
+	align-items:center;
+}
+.meet-row::before {
+	content:'';
+	position:absolute;
+	top:10%;
+	left:0;
+	width:100%;
+	height:80%;
+	background-color:#DFFDFF;
+	z-index:0;
+}
+.meet-left__item {
+	position:relative;
+	flex-basis:33.3%;
+	margin:0px 0px 20px 0px;
+	padding:0 20px;
+}
+}

@@ -1,0 +1,134 @@
+.open {
+	position:relative;
+   width:100%;
+	color:rgb(255,255,255);
+  background:url('../../../assets/img/home/home-background-top.webp') 0px 0px no-repeat;
+	background-size:cover;
+}
+.open-background {
+  position: absolute;
+  width:100%;
+  height: 100%;
+ }
+.open-header__row {
+  width:100%;
+	height:850px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction:column;
+}
+.open-header__header {
+	font-family:f;
+	color:rgb(255,255,255);
+	font-size:174px;
+	white-space:nowrap;
+}
+.open-header__Subheader {
+	text-transform:uppercase;
+	font-family:b;
+	font-size:40px;
+	margin:-40px 0px 30px 0px;
+}
+.open-video {
+}
+.open-video__row {
+	display:flex;
+	cursor:pointer;
+}
+.open-video__button {
+	margin:0px 20px 0px 0px;
+}
+.open-video__text {
+	font-family:l;
+	font-size:22px;
+	line-height:26px;
+	letter-spacing:0.05rem;
+}
+.open-video-wrapper {
+	z-index:20;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-color:#555555e8;
+ opacity:0;
+	visibility:hidden;
+	transition:all 0.3s ease .0s;
+}
+.videoMovie {
+	padding:0px 20px 0px 20px;
+	width:100%;
+ max-width:1280px;
+	max-height:720px;
+}
+.open-video-show {
+ opacity:1;
+	visibility:visible;
+}
+.video-close-button {
+	position:absolute;
+	top:20px;
+	right:40px;
+	cursor:pointer;
+}
+@media screen and (max-width:1000px) {
+	.open-header__row {
+	height:550px;
+}
+.open-header__header {
+ font-size:15.3vw;
+}
+.open-header__Subheader {
+	font-size:26px;
+	margin:-40px 0px 20px 0px;
+}
+.open-video__text {
+	font-family:l;
+	font-size:20px;
+	line-height:26px;
+	letter-spacing:0.05rem;
+}
+}
+@media screen and (max-width:768px) {
+	.open-header__row {
+	height:340px;
+}
+.open {
+	background:url('../../../assets/img/home/home-background-top-tablet.webp') 0px 0px no-repeat;
+}
+.open-header__header {
+}
+.open-header__Subheader {
+	font-size:22px;
+	margin:-20px 0px 20px 0px;
+}
+.open-video__text {
+	font-family:l;
+	font-size:18px;
+	line-height:26px;
+	letter-spacing:0.05rem;
+}
+}
+@media screen and (max-width:500px) {
+	.open-header__row {
+	height:350px;
+}
+.open-header__header {
+}
+.open-header__Subheader {
+	font-size:16px;
+	margin:-10px 0px 10px 0px;
+	letter-spacing:0.05rem;
+}
+.open-video__text {
+	font-family:l;
+	font-size:16px;
+	line-height:26px;
+	letter-spacing:0.05rem;
+}
+}

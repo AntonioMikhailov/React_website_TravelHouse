@@ -1,0 +1,83 @@
+.lets {
+	padding:80px 0px 40px 0px;
+}
+.lets-row {
+	display:flex;
+}
+.lets-left__row {
+	position:relative;
+	flex-basis:70%;
+	padding:0 20px;
+}
+ 
+.lets-left__bigImage img {
+	width:100%;
+}
+.lets-left__smallImage {
+	position:absolute;
+	left:60px;
+	bottom:0px;
+ transition:all 0.3s ease .0s;
+	transform:translateY(30%);
+}
+.lets-left__smallImage img {
+	object-fit:cover;
+	max-width:200px;
+}
+.lets-right__row {
+	flex-basis:30%;
+	padding:0 20px;
+}
+.lets-right__title {
+	margin:0px 0px 10px 0px;
+	line-height:100%;
+}
+.title-h1 {
+}
+.lets-right__subTitle {
+	font-family:b;
+	font-size:16px;
+	color:#535353;
+	margin:0px 0px 20px 0px;
+}
+.lets-right__text {
+}
+.textBody {
+}
+@media screen and (max-width:1000px) {
+	.lets-row {
+	display:flex;
+	flex-direction:column;
+}
+.lets-left__row {
+	order:2;
+	margin:40px 0px 0px 0px;
+}
+.lets {
+	padding:30px 0px 40px 0px;
+}
+.lets-right__title {
+	margin:20px 0px 10px 0px;
+}
+}
+@media screen and (max-width:768px) {
+	.lets-left__smallImage img {
+	max-width:150px;
+}
+.lets {
+	padding:20px 0px 40px 0px;
+}
+}
+@media screen and (max-width:550px) {
+	.lets-left__smallImage img {
+	max-width:120px;
+}
+}
+@media screen and (max-width:450px) {
+	.lets-left__smallImage img {
+	max-width:90px;
+}
+.lets-right__subTitle {
+	font-size:14px;
+}
+}

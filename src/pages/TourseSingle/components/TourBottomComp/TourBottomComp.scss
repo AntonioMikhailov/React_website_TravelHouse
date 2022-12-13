@@ -1,0 +1,141 @@
+.tabsingle {
+	padding:40px 0px 150px 0px;
+}
+.tabsingle-row {
+}
+.tabsingle-tabbutton__row {
+	display:flex;
+	margin:0px 0px 40px 0px;
+}
+.tabsingle-tubbutton {
+	display:inline-block;
+	width:200px;
+	height:50px;
+	font-size:26px;
+	color:#1E2126;
+	font-family:b;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	background-color:#DFFDFF;
+	background-color:#fff;
+	padding:0px 10px 0px 10px;
+	margin:0px 20px 0px 0px;
+	border:0.5px solid #707070;
+	cursor:pointer;
+	transition:all .3s ease .0s;
+}
+.tabButton-Showbackground {
+	background-color:#DFFDFF;
+	border:0.5px solid #70707000;
+}
+.tabsingle-tubContent__row {
+	position:relative;
+	margin:40px 0px 30px 0px;
+}
+.tabsingle-tubContent span {
+	display:inline-block;
+ font-family:b;
+	font-size:21px;
+	margin:0px 0px 10px 0px;
+	line-height:130%;
+}
+.tabsingle-tubContent {
+	position:absolute;
+	top:0;
+	left:0;
+	opacity:0;
+	visibility:hidden;
+	overflow:hidden;
+	max-width:900px;
+ transition:all 0.3s ease .0s;
+}
+.showTabContent {
+	opacity:1;
+	visibility:visible;
+	position:relative;
+ overflow:visible;
+}
+ .carousel-preview {
+	margin:0 auto;
+}
+.carousel-preview__row {
+	display:flex;
+	flex-wrap:wrap;
+	margin:0 -10px;
+}
+.carousel-preview__columns {
+	box-sizing:border-box;
+	padding:0 10px;
+	margin:0px 0px 20px 0px;
+	cursor:pointer;
+	flex-basis:33.3%;
+}
+.carousel-preview-item {
+	position:relative;
+}
+.carousel-preview-item::before {
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:#0000008c;
+	opacity:0;
+	transition:all .3s ease;
+	z-index:4;
+}
+.carousel-preview__image {
+	width:100%;
+	height:200px;
+}
+.carousel-preview__image img {
+	width:100%;
+	height:100%;
+	display:block;
+	object-fit:cover;
+}
+.carousel-preview__icon {
+	position:absolute;
+	top:calc(50% - 20px);
+	left:calc(50% - 20px);
+	opacity:0;
+	cursor:pointer;
+	transition:all 0.3s ease;
+	z-index:5;
+}
+.carousel-preview__columns:hover .carousel-preview-item::before {
+	opacity:1;
+}
+.carousel-preview__columns:hover .carousel-preview__icon {
+	opacity:1;
+}
+@media screen and (max-width:800px) {
+	.carousel-preview__columns {
+	flex-basis:50%;
+}
+}
+@media screen and (max-width:600px) {
+	.tabsingle {
+	padding:0px 0px 100px 0px;
+}
+}
+@media screen and (max-width:500px) {
+	.tabsingle-tubbutton {
+	font-size:20px;
+}
+.carousel-preview__columns {
+	flex-basis:100%;
+}
+}
+@media screen and (max-width:400px) {
+	.tabsingle-tabbutton__row {
+	display:flex;
+	flex-wrap:wrap;
+	margin:0px 0px 40px 0px;
+}
+.tabsingle-tubbutton {
+	margin:0px 0px 20px 0px;
+}
+}
